@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conferência de Chassis</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>Conferência de Chassis</h1>
+
+<div class="painel">
+
+<p>Total: <span id="total">0</span></p>
+
+<p>Encontrados:
+<span id="ok">0</span></p>
+
+<p>Faltando:
+<span id="faltam">0</span></p>
+
+<progress id="barra" value="0" max="100"></progress>
+
+</div>
+
+<input type="file" id="arquivo" accept=".xlsx">
+
+<div id="reader"></div>
+
+<button id="scan">Escanear</button>
+
+<h2 id="mensagem"></h2>
+
+<button id="faltantesBtn">
+Ver veículos faltantes
+</button>
+
+<ul id="lista"></ul>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
